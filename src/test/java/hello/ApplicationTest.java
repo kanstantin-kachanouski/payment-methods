@@ -37,7 +37,7 @@ public class ApplicationTest {
 
 	private Set<PaymentMethod> readTestData(String filename) throws Exception {
 		ObjectMapper mapper = new ObjectMapper();
-		InputStream is = this.getClass().getClassLoader().getResourceAsStream("test-sample-resp.json");
+		InputStream is = this.getClass().getClassLoader().getResourceAsStream(filename);
 		PaymentMethod[] testDataArr = mapper.readValue(is, PaymentMethod[].class);
 		return new TreeSet<>(Arrays.asList(testDataArr));
 	}
