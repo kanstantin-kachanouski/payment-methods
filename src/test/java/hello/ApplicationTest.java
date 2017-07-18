@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -27,11 +28,11 @@ public class ApplicationTest {
 	@Test
 	public void testGetSample() throws Exception {
 		PaymentMethod[] arr = restTemplate.getForObject("/sample", PaymentMethod[].class);
-		Set<PaymentMethod> paymentMethods = new TreeSet<>(Arrays.asList(arr));
+		Set<PaymentMethod> paymentMethods = new HashSet<>(Arrays.asList(arr));
 
 		Set<PaymentMethod> testDataPaymentMethods = readTestData("test-sample-resp.json");
 
-		assertTrue(paymentMethods.equals(testDataPaymentMethods));
+		assertTrue(comparePaymentMethods(paymentMethods, testDataPaymentMethods));
 
 	}
 
@@ -39,7 +40,19 @@ public class ApplicationTest {
 		ObjectMapper mapper = new ObjectMapper();
 		InputStream is = this.getClass().getClassLoader().getResourceAsStream(filename);
 		PaymentMethod[] testDataArr = mapper.readValue(is, PaymentMethod[].class);
-		return new TreeSet<>(Arrays.asList(testDataArr));
+		return new HashSet<>(Arrays.asList(testDataArr));
+	}
+
+	private boolean comparePaymentMethods(Set<PaymentMethod> a, Set<PaymentMethod> b) {
+		if (a == null || b == null) {
+			return false;
+		}
+
+		if (a.size() != b.size()) {
+			return false;
+		}
+
+		return a.containsAll(b);
 	}
 
 
