@@ -2,10 +2,6 @@ package hello;
 
 import lombok.Data;
 
-
-/**
- * @author www.epam.com
- */
 @Data
 public class PaymentMethod implements Comparable<PaymentMethod> {
     private int planId;

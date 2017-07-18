@@ -12,9 +12,6 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author www.epam.com
- */
 @RestController
 public class SampleController {
     private List<PaymentMethod> sampleMethods;
