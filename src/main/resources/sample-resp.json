@@ -1,0 +1,82 @@
+[
+  {
+    "planId": 11,
+    "payorCode": "BSNJA",
+    "planName": "Horizon"
+  },
+  {
+    "planId": 6,
+    "payorCode": "BSVAA",
+    "planName": "WellPoint/Anthem"
+  },
+  {
+    "planId": 7,
+    "payorCode": "05   ",
+    "planName": "Medicare"
+  },
+  {
+    "planId": 42,
+    "payorCode": null,
+    "planName": "Florida Health Care"
+  },
+  {
+    "planId": 4,
+    "payorCode": "HHPKY",
+    "planName": "Humana"
+  },
+  {
+    "planId": 44,
+    "payorCode": null,
+    "planName": "Health America"
+  },
+  {
+    "planId": 3,
+    "payorCode": "CIGNH",
+    "planName": "CIGNA"
+  },
+  {
+    "planId": 12,
+    "payorCode": "OXFHP",
+    "planName": "Oxford Health"
+  },
+  {
+    "planId": 5,
+    "payorCode": "UNITE",
+    "planName": "UnitedHealthcare"
+  },
+  {
+    "planId": 10,
+    "payorCode": null,
+    "planName": "Other"
+  },
+  {
+    "planId": 41,
+    "payorCode": "COVPI",
+    "planName": "Coventry"
+  },
+  {
+    "planId": 9,
+    "payorCode": null,
+    "planName": "Cash/Credit (Self-pay)"
+  },
+  {
+    "planId": 58,
+    "payorCode": null,
+    "planName": "Capital Health Plan"
+  },
+  {
+    "planId": 2,
+    "payorCode": "BSNCA",
+    "planName": "BC/BS"
+  },
+  {
+    "planId": 8,
+    "payorCode": null,
+    "planName": "Medicaid"
+  },
+  {
+    "planId": 1,
+    "payorCode": "AETNA",
+    "planName": "Aetna"
+  }
+]
