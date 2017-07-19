@@ -1,0 +1,12 @@
+{
+  "labcorpPayerCode": "001",
+  "serviceDate": "2017-07-19",
+  "subscriber": {
+    "firstName": "Santuccio",
+    "lastName": "Salieri",
+    "dateOfBirth": "2000-01-01",
+    "gender": "M",
+    "relationshipToSubscriber": "spouse"
+  },
+  "subscriberId": "100"
+}
